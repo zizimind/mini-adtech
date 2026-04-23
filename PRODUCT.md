@@ -226,17 +226,6 @@ This educational engine demonstrates the same concepts as the production system:
 | Budget updates | Simulated | NATS JetStream (real-time) |
 | Logging | Print | Kafka + ZSTD compression |
 
----
-
-## Staff-level review checklist (included)
-
-For technical reviewers, the project now includes explicit coverage of:
-
-- **Correctness:** unit tests with edge-case scenarios.
-- **Reproducibility:** Docker, Docker Compose, and deterministic benchmark runner.
-- **Measurability:** artifact metrics for no-fill, RPM, enrollment rate, fit score, and p50/p95 latency.
-- **Operational thinking:** pacing, frequency cap, throttling, and shadow model workflow.
-- **Risk disclosure:** known limitations documented in `README.md`.
 
 ---
 
