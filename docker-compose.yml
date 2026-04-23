@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mini-adtech:latest
+    command: python mini_adtech.py
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mini-adtech:latest
+    command: pytest -q
